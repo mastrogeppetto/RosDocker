@@ -1,0 +1,11 @@
+version: "2.2"
+
+services:
+  desktop:
+    image: accetto/ubuntu-vnc-xfce-g3
+    container_name: RosDesktop
+    hostname: desktop
+    ports:
+      - "36901:6901"
+    volumes:
+      - ./shared:/home/user/shared
