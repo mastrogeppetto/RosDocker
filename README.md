@@ -1,4 +1,4 @@
-### RosDocker: ROS in a Docker
+# RosDocker: ROS in a Docker
 Consente l'uso del Robot Operating System (ROS) in versione "Jazzy" all'interno di un container docker che ospita un ambiente di esecuzione Linux Ubuntu 24.04. Si accede al sistema tramite browser. L'interfaccia grafica offre una operatività Linux completa, inclusa l'installazione di ulteriori pacchetti.
 Il package installato è il "desktop", che include tutti gli strumenti ROS di uso comune (ad es. ros2, rqt, rviz2 ecc.)
 
