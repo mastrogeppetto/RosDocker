@@ -7,13 +7,18 @@ Il package ROS installato è il "desktop", che include tutti gli strumenti ROS d
 
 ## Installazione ed avvio
 
- 1. Installare Docker Desktop
- 2. Avviare il container
+ 1. Installare Docker Desktop ([https://www.docker.com/products/docker-desktop/](link))
+ 2. Clonare questo repository git nel proprio PC ed accedere alla directory
+    
+        git clone https://github.com/mastrogeppetto/rosdocker
+        cd rosdocker
+    
+ 4. Avviare il container
 
         docker compose up -d
 
- 3. Accedere al container dal browser alla URL [http://localhost:36901/vnc.html](http://localhost:36901/vnc.html). La password dell'utente "headless" è "headless"
- 4. Testare l'installazione aprendo, dall'interfaccia Linux del container, due terminali.
+ 5. Accedere al container dal browser alla URL [http://localhost:36901/vnc.html](http://localhost:36901/vnc.html). La password dell'utente "headless" è "headless"
+ 6. Testare l'installazione aprendo, dall'interfaccia Linux del container, due terminali.
     In uno:
 
         ros2 run demo_nodes_cpp talker
