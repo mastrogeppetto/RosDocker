@@ -18,7 +18,8 @@ Il package ROS installato è il "desktop", che include tutti gli strumenti ROS d
         docker compose up -d
 
  5. Accedere al container dal browser alla URL [http://localhost:36901/vnc.html](http://localhost:36901/vnc.html). La password dell'utente "headless" è "headless"
- 6. Testare l'installazione aprendo, dall'interfaccia Linux del container, due terminali.
+ 6. Testare l'installazione realizzando il primo dei tutorial sulla pagina di installazione di ROS. Nella interfaccia Linux del container, aprire due terminali.
+    
     In uno:
 
         ros2 run demo_nodes_cpp talker
