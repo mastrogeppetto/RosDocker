@@ -7,8 +7,8 @@ Il package ROS installato è il "desktop", che include tutti gli strumenti ROS d
 
 ## Installazione ed avvio
 
- 1. Installare Docker Desktop ([https://www.docker.com/products/docker-desktop/](link))
- 2. Clonare questo repository git nel proprio PC ed accedere alla directory
+ 1. Installare Docker Desktop ([link](https://www.docker.com/products/docker-desktop/))
+ 3. Clonare questo repository git nel proprio PC ed accedere alla directory
     
         git clone https://github.com/mastrogeppetto/rosdocker
         cd rosdocker
