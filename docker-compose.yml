@@ -2,8 +2,10 @@ version: "2.2"
 
 services:
   desktop:
-    image: mastrogeppetto/rosdesktop:beta
+    image: mastrogeppetto/rosdesktop
     container_name: RosDesktop
     hostname: desktop
+    environment:
+      - VNC_RESOLUTION=1920x1080
     ports:
       - "36901:6901"
