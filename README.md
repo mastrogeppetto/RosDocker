@@ -28,10 +28,12 @@ Il package ROS installato è il "desktop", che include tutti gli strumenti ROS d
 
         ros2 run demo_nodes_py listener
 
+ 7. Per arrestare il container utilizzare il tasto *default* in alto a destra nell'interfaccia Ubuntu offerta dal container.
+ 8. Per riavviare il container conservando le modifiche dell'utente utilizzare il comando 'docker start RosDesktop". Usare `compose` **solo** per rigenerare un nuovo container cancellando le modifiche dell'utente
 
 ## Suggerimenti d'uso
 
-# Scambio di file con il sistema ospite
+### Scambio di file con il sistema ospite
 
 Per scambiare file con il sistema ospite è disponibile il comando Docker "cp", che copia un file dal sistema ospite al filesystem di un container e viceversa. Per copiare da ospite a container:
 
@@ -41,13 +43,13 @@ e viceversa per copiare da container ad ospite.
 
 In alcuni casi può essere più efficace un volume Docker condiviso tra ospite e container, che può essere realizzato in modo semplice con conoscenze elementari della tecnologia Docker.
 
-# Condivisione della clipboard con il sistema ospite
+### Condivisione della clipboard con il sistema ospite
 
 Per effettuare operazioni di copia/incolla tra ospite e container è necessario condividere la clipboard utilizzando la linguetta che si trova all'estrema sinistra della pagina di accesso al container. Premendola si accede alla barra di controllo di VNC. Il secondo tast della barra di controllo da accesso alla clipboard condivisa.
 
 Il contenuto della finestra corrisponde alla clipboard condivisa. Viene impostata automaticamente con operazioni di *copy* e *paste* dal container. Per trasferire da ospite a container è invece necessaria una operazione di *copy* da sistema ospite ed un *paste* nella finestra della clipboard condivisa. A questo punto è possibile un *paste* nel container.
 
-# Realizzazione di due tutorial
+### Realizzazione di due tutorial
 
 I tutorial sono tratti dal sito di documentazione del progetto ([https://docs.ros.org/en/jazzy/Tutorials.html](URL)).
 
