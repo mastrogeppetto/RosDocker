@@ -3,7 +3,9 @@ Consente l'uso del Robot Operating System (ROS) su sistemi operativi Windows che
 
 ROS è preinstallato in versione "Jazzy" all'interno di un container docker che ospita un ambiente di esecuzione Linux Ubuntu 24.04. Si accede al sistema tramite browser. L'interfaccia grafica offre una operatività Linux completa, inclusa l'installazione di ulteriori pacchetti.
 
-Il package ROS installato è il "desktop", che include tutti gli strumenti ROS di uso comune (ad es. ros2, rqt, rviz2 ecc.)
+In alternativa è disponibile un container con la versione "Humble" su Ubuntu 22.04. Per ottenerela rimuovere o rinominare il file `docker-compose.yml` e rinominare il file `docker-compose_humble.yml` come `docker-compose.yml`.
+
+Il package ROS installato è il "desktop", che include tutti gli strumenti ROS di uso comune (ad es. ros2, rqt, rviz2 ecc.).
 
 ## Installazione ed avvio
 
