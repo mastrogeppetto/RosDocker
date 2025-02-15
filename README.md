@@ -1,9 +1,9 @@
 # RosDocker: ROS in a Docker
 Consente l'uso del Robot Operating System (ROS) su sistemi operativi Windows che abbiano installato Docker Desktop.
 
-ROS è preinstallato in versione "Jazzy" all'interno di un container docker che ospita un ambiente di esecuzione Linux Ubuntu 24.04. Si accede al sistema tramite browser. L'interfaccia grafica offre una operatività Linux completa, inclusa l'installazione di ulteriori pacchetti.
+ROS è preinstallato in versione "Jazzy" all'interno di un container docker che ospita un ambiente di esecuzione Linux Ubuntu 24.04 o nella versione "Humble" su Ubuntu 22.04.
 
-In alternativa è disponibile un container con la versione "Humble" su Ubuntu 22.04. Per ottenerela rimuovere o rinominare il file `docker-compose.yml` e rinominare il file `docker-compose_humble.yml` come `docker-compose.yml`.
+Si accede al sistema tramite browser. L'interfaccia grafica offre una operatività Linux completa, inclusa l'installazione di ulteriori pacchetti.
 
 Il package ROS installato è il "desktop", che include tutti gli strumenti ROS di uso comune (ad es. ros2, rqt, rviz2 ecc.).
 
@@ -15,9 +15,13 @@ Il package ROS installato è il "desktop", che include tutti gli strumenti ROS d
         git clone https://github.com/mastrogeppetto/rosdocker
         cd rosdocker
     
- 4. Avviare il container
+ 4. Avviare il container. Per avviare la versione Jazzy usare il comando:
 
         docker compose up -d
+
+    mentre per la versione Humble usare il comando:
+
+        docker compose -f docker-compose_humble.yml up -d
 
  5. Accedere al container dal browser alla URL [http://localhost:36901/vnc.html](http://localhost:36901/vnc.html). La password dell'utente "headless" è "headless"
  6. Testare l'installazione realizzando il primo dei tutorial sulla pagina di installazione di ROS. Nella interfaccia Linux del container, aprire due terminali.
